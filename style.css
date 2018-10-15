@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* APP */
+
+#app {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+
+#app::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: dashed 1px #666;
+}
+
+/* Players */
+
+.player {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    top: 45%;
+}
+
+#player1 {
+    left: 10px;
+}
+
+#player2 {
+    right: 10px;
+}
+
+/* BALL */
+
+#ball {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 49%;
+    top: 49%;
+    background-color: white;
+}
+
+/* SCORES */
+
+.score {
+    position: absolute;
+    top: 10px;
+    width: 50%;
+    font-size: 72px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;
+}
+
+#score2 {
+    left: 50%;
+}
